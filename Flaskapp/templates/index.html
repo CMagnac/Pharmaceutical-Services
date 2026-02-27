@@ -6,9 +6,9 @@
 {% block content %}
 <div class="container">
     {% for key, form in forms.items() %}
-        <a href="{{ url_for('questionnaire', form_id=key) }}">
-            <button class="submit-btn">{{ form.title }}</button>
-        </a>
+    <a href="{{ url_for('questionnaire', form_id=key) }}">
+        <button class="submit-btn">{{ form.title }}</button>
+    </a>
     {% endfor %}
 </div>
 {% endblock %}

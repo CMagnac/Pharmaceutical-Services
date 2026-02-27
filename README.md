@@ -34,15 +34,6 @@ Based on the selected criteria, the pharmacist can determine:
 * Structured decision-support logic
 * PDF-ready output
 
-### Project Structure
-
-Flaskapp
-├── app.py
-├── templates/
-├── static/
-├── forms.json
-├── requirements.txt
-
 ### Installation and Usage
 
 1️⃣ Install dependencies
@@ -73,3 +64,7 @@ Currently, the two main RADOT services available in community pharmacies are:
 * Cystitis testing
 
 This project also aims to support educational blog pages (in French and English) :
+
+## Demo
+
+![app](Img/demo.png)

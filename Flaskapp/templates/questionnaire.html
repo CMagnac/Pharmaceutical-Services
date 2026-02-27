@@ -9,10 +9,10 @@
     <!-- First Patient Information -->
     <div class="container patient-info">
         <h2>Informations Patient</h2>
-<input type="date" name="date_jour" value="{{ current_date }}">
+        <input type="date" name="date_jour" value="{{ current_date }}">
         {% for field in form.patient_fields %}
-            <label>{{ field.label }} :</label>
-            <input type="{{ field.type }}" name="{{ field.name }}">
+        <label>{{ field.label }} :</label>
+        <input type="{{ field.type }}" name="{{ field.name }}">
         {% endfor %}
     </div>
 
@@ -23,21 +23,21 @@
 
 
         {% for checkbox in block.checkboxes %}
-            <label>
-                <input type="checkbox" name="criteria" value="{{ checkbox }}">
-                {{ checkbox }}
-            </label><br><br>
+        <label>
+            <input type="checkbox" name="criteria" value="{{ checkbox }}">
+            {{ checkbox }}
+        </label><br><br>
         {% endfor %}
     </div>
     {% endfor %}
 
-<!-- Second Patient Information -->
+    <!-- Second Patient Information -->
     <div class="container patient-eligibility">
         <h2>Questions à poser dans le cadre de la vérification de l'éligibilité</h2>
 
         {% for field in form.patient_eligibility %}
-            <label>{{ field.label }} :</label>
-            <input type="{{ field.type }}" name="{{ field.name }}">
+        <label>{{ field.label }} :</label>
+        <input type="{{ field.type }}" name="{{ field.name }}">
         {% endfor %}
     </div>
 
