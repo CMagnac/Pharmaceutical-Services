@@ -1,0 +1,48 @@
+{% extends "base.html" %}
+
+{% block title %}{{ form.title }}{% endblock %}
+{% block header %}{{ form.title }}{% endblock %}
+
+{% block content %}
+<form method="POST" action="/generate_pdf">
+
+    <!-- First Patient Information -->
+    <div class="container patient-info">
+        <h2>Informations Patient</h2>
+<input type="date" name="date_jour" value="{{ current_date }}">
+        {% for field in form.patient_fields %}
+            <label>{{ field.label }} :</label>
+            <input type="{{ field.type }}" name="{{ field.name }}">
+        {% endfor %}
+    </div>
+
+    <!-- Criteria Blocks -->
+    {% for block in form.criteria_blocks %}
+    <div class="container">
+        <h2>{{ block.title }}</h2>
+
+
+        {% for checkbox in block.checkboxes %}
+            <label>
+                <input type="checkbox" name="criteria" value="{{ checkbox }}">
+                {{ checkbox }}
+            </label><br><br>
+        {% endfor %}
+    </div>
+    {% endfor %}
+
+<!-- Second Patient Information -->
+    <div class="container patient-eligibility">
+        <h2>Questions à poser dans le cadre de la vérification de l'éligibilité</h2>
+
+        {% for field in form.patient_eligibility %}
+            <label>{{ field.label }} :</label>
+            <input type="{{ field.type }}" name="{{ field.name }}">
+        {% endfor %}
+    </div>
+
+    <button type="submit" class="submit-btn">
+        Télécharger le PDF
+    </button>
+</form>
+{% endblock %}

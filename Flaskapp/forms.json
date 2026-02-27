@@ -1,0 +1,166 @@
+{
+  "cystite": {
+    "title": "Questionnaire Cystite",
+    "patient_fields": [
+      { "label": "Nom et prénom", "type": "text", "name": "nom_prenom" },
+      {
+        "label": "Numéro de Sécurité Sociale",
+        "type": "text",
+        "name": "num_secu"
+      },
+      {
+        "label": "Médecin traitant",
+        "type": "text",
+        "name": "medecin_traitant"
+      },
+      { "label": "Âge", "type": "number", "name": "age" }
+    ],
+    "criteria_blocks": [
+      {
+        "title": "Critères d’exclusion nécessitant une consultation médicale d’urgence",
+        "checkboxes": [
+          "Fièvre rapportée par la patiente (> 38 °C)",
+          "Hypothermie (< 36 °C)",
+          "Frissons"
+        ]
+      },
+      
+      {
+        "title": "Autres critères d’exclusion nécessitant une consultation médicale dans les 24h",
+        "checkboxes": [
+          "Autres symptômes suggérant une pyélonéphrite : douleurs au niveau des fosses lombaires ou au niveau des flancs/vomissements/diarrhées/douleurs abdominales",
+          "Sexe masculin",
+          "Age < 16 ans ou > 65 ans",
+          "Recueil insuffisant des informations médicales : non-maîtrise de la langue française, réponses inadaptées",
+          "Grossesse avérée ou non exclue",
+          "Signes d’appel gynécologique : leucorrhées, prurit vulvaire ou vaginal",
+          "Cystites à répétition : > ou = 3 épisodes dans les 12 derniers mois",
+          "Episode de cystite non complétement résolue dans les 15 derniers jours",
+          "Anomalie fonctionnelle ou organique de l’arbre urinaire (uropathie, résidu vésical, reflux, lithiase, tumeur, geste chirurgical récent, endoscopique ou sondage…)",
+          "Immunodépression ou risque d’immunodépression dus à une pathologie (VIH) ou à un médicament (corticothérapie au long cours, chimiothérapie, immunosuppresseurs)",
+          "Port d’un cathéter veineux implanté",
+          "Insuffisance rénale sévère rapportée par la patiente ou débit de filtration glomérulaire (DFG) < 30mL/min/1,73m2 selon CKD-EPI",
+          "Antibiothérapie en cours pour une autre pathologie",
+          "Prise de fluoroquinolones dans les 3 mois précédents (risque de sélection de germes résistants)",
+          "Doute du pharmacien"
+        ]
+      },
+      {
+        "title": "Recherche de signes de gravité",
+        "checkboxes": [
+          "Température mesurée par le pharmacien < 36 °C ou > 38 °C",
+          "Altération franche des constantes mesurées par le pharmacien : Pression Artérielle Systolique < 90 mm Hg ou Fréquence Cardiaque > 110/mn ou fréquence Respiratoire > 20/mn"
+        ]
+      }
+    ],
+        "patient_eligibility": [
+          {
+            "label": "Quelles maladies ou interventions chirurgicales avez-vous ou avez-vous eues ?",
+            "type": "text",
+            "name": "maladies_intervention_chir"
+          },
+          {
+            "label": "Avez-vous des allergies (notamment aux pénicillines) ou des intolérances médicamenteuses ? Si oui, lesquelles ?",
+            "type": "text",
+            "name": "allergies_intolérances"
+          },
+          { "label": "Des traitements médicamenteux vous sont-ils prescrits actuellement ? Si oui, lesquels ?",
+          "type": "text",
+          "name": "traitements_medic" },
+          { "label": "Un événement marquant de santé vous a-t-il affecté depuis un an ?",
+          "type": "text",
+          "name": "événement_marquant" },
+          { "label": "Souhaitez-vous me signaler un autre point concernant votre santé ?",
+          "type": "text",
+          "name": "autre_point" }
+        ]
+  },
+  "angine": {
+    "title": "Questionnaire Angine",
+    "patient_fields": [
+      { "label": "Nom et prénom", "type": "text", "name": "nom_prenom" },
+      {
+        "label": "Numéro de Sécurité Sociale",
+        "type": "text",
+        "name": "num_secu"
+      },
+      {
+        "label": "Médecin traitant",
+        "type": "text",
+        "name": "medecin_traitant"
+      },
+      { "label": "Âge", "type": "number", "name": "age" }
+    ],
+    "criteria_blocks": [
+      {
+        "title": "Critères d’exclusion nécessitant une consultation médicale d’urgence",
+        "checkboxes": [
+          "Fièvre rapportée par le patient > 39,5°C",
+          "Enfant présentant des troubles digestifs importants"
+        ]
+      },
+      
+      {
+        "title": "Autres critères d’exclusion nécessitant une consultation médicale dans les 24h",
+        "checkboxes": [
+          "Recueil d’informations médicales insuffisant",
+          "Patient de moins de 10 ans",
+          "Éruption cutanée associée chez l’enfant (moins de 15 ans)",
+          "Durée d’évolution des symptômes > 8 jours",
+          "Retour de voyage en pays tropical depuis 2 à 5 jours et vaccination antidiphtérique non à jour ou non renseignée",
+          "Grossesse avérée ou non exclue",
+          "Immunodépression ou risque d’immunodépression",
+          "Insuffisance rénale sévère ou DFG < 30 mL/min/1.73m 2 selon CKD-EPI",
+          "Antibiothérapie en cours pour une autre raison",
+          "Episode similaire dans les 15 jours précédents",
+          "Patient vu pour la 3ème fois pour odynophagie par un pharmacien depuis 6 mois sans avoir vu son médecin traitant",
+          "Contre-indication à l'utilisation des spécialités a base des principes actifs suivants : amoxicilline, céfuroxime, cefpodoxime et clarithromycine conformément au RCP",
+          "Port d’un cathéter veineux implanté",
+          "Doute du pharmacien"
+        ]
+      },
+      {
+        "title": "Signes de complication locale et de gravité à l’examen endo-buccal dont signes évoquant un phlegmon amygdalien",
+        "checkboxes": [
+          "Température mesurée > 39,5°C",
+          "Altération franche des constantes (pression artérielle systolique < 90 mmHg ; fréquence cardiaque > 110/min ; fréquence respiratoire > 20/min)",
+          "Difficulté respiratoire ou pour parler",
+          "Trismus (limitation de l’ouverture buccale)",
+          "Hyper salivation",
+          "Cervicalgie ou torticolis limitant les mouvements de la tête"
+        ]
+      },
+      {
+        "title": "Score de Mac Isaac (si patient > 15 ans)",
+        "checkboxes": [
+          "absence de toux | +1 pt",
+          "adénopathies sensibles | +1 pt",
+          "T > 38°C | +1 pt",
+          "atteinte amygdalienne | +1 pt",
+          "âge ≥ 45 ans | -1 pt"
+        ]
+      }
+    ],
+        "patient_eligibility": [
+          {
+            "label": "Quelles maladies ou interventions chirurgicales avez-vous ou avez-vous eues ?",
+            "type": "text",
+            "name": "maladies_intervention_chir"
+          },
+          {
+            "label": "Avez-vous des allergies (notamment aux pénicillines) ou des intolérances médicamenteuses ? Si oui, lesquelles ?",
+            "type": "text",
+            "name": "allergies_intolérances"
+          },
+          { "label": "Des traitements médicamenteux vous sont-ils prescrits actuellement ? Si oui, lesquels ?",
+          "type": "text",
+          "name": "traitements_medic" },
+          { "label": "Un événement marquant de santé vous a-t-il affecté depuis un an ?",
+          "type": "text",
+          "name": "événement_marquant" },
+          { "label": "Souhaitez-vous me signaler un autre point concernant votre santé ?",
+          "type": "text",
+          "name": "autre_point" }
+        ]
+  }
+}
