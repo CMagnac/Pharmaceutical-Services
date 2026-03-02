@@ -65,8 +65,8 @@ Currently, the two main RADOT services available in community pharmacies are:
 
 This project support educational blog pages (in French and English) :
 
-* ![Cystite](https://cmagnac.github.io/Pharmaceutical-Services/RADOT-Services/cystite.html) (fr) / ![Cystitis](https://cmagnac.github.io/Pharmaceutical-Services/RADOT-Services/cystitis.html) (en)
-* ![Angine](https://cmagnac.github.io/Pharmaceutical-Services/RADOT-Services/angine.html) (fr) / ![Tonsillitis](https://cmagnac.github.io/Pharmaceutical-Services/RADOT-Services/tonsillitis.html) (en)
+* [Cystite](https://cmagnac.github.io/Pharmaceutical-Services/RADOT-Services/cystite.html) (fr) / [Cystitis](https://cmagnac.github.io/Pharmaceutical-Services/RADOT-Services/cystitis.html) (en)
+* [Angine](https://cmagnac.github.io/Pharmaceutical-Services/RADOT-Services/angine.html) (fr) / [Tonsillitis](https://cmagnac.github.io/Pharmaceutical-Services/RADOT-Services/tonsillitis.html) (en)
 
 ## Demo
 
