@@ -28,11 +28,11 @@ Based on the selected criteria, the pharmacist can determine:
 
 ### Features
 
-* Flask backend to collect and process user selections
-* Generic and customizable questionnaire templates
-* JSON-based questionnaire structure
-* Structured decision-support logic
-* PDF-ready output
+* Flask backend to collect and process user selections ;
+* Generic and customizable questionnaire templates ;
+* JSON-based questionnaire structure ;
+* Structured decision-support logic ;
+* PDF-ready output.
 
 ### Installation and Usage
 
@@ -60,10 +60,13 @@ French community pharmacists are trained and certified to perform Rapid Diagnost
 
 Currently, the two main RADOT services available in community pharmacies are:
 
-* Tonsillitis (Angina) testing
-* Cystitis testing
+* Tonsillitis (Angina) testing ;
+* Cystitis testing.
 
-This project also aims to support educational blog pages (in French and English) :
+This project support educational blog pages (in French and English) :
+
+* ![Cystite](https://cmagnac.github.io/Pharmaceutical-Services/RADOT-Services/cystite.html) (fr) / ![Cystitis](https://cmagnac.github.io/Pharmaceutical-Services/RADOT-Services/cystitis.html) (en)
+* ![Angine](https://cmagnac.github.io/Pharmaceutical-Services/RADOT-Services/angine.html) (fr) / ![Tonsillitis](https://cmagnac.github.io/Pharmaceutical-Services/RADOT-Services/tonsillitis.html) (en)
 
 ## Demo
 
